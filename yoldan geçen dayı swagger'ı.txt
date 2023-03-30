@@ -1,0 +1,265 @@
+// POST /api/v1/user/signup
+
+{
+    "mail" : "mail",
+    "password" : "password",
+    "name" : "name",
+    "deviceToken" : "deviceToken"
+}
+
+// RESPONSE
+
+{
+    "status" : "success",
+    "data" : {
+        "userId" : "userId",
+        "mail" : "mail",
+        "token" : "token"
+    }
+}
+
+
+// POST /api/v1/user/login
+
+{
+    "mail" : "mail",
+    "password" : "password"
+}
+
+// RESPONSE
+
+{
+    "status" : "success",
+    "data" : {
+        "userId" : "userId",
+        "mail" : "mail",
+        "token" : "token"
+    }
+}
+
+
+// GET /api/v1/user/profile
+// RESPONSE
+
+{
+    "userId" : "userId",
+    "name" : "name",
+    "profileImage" : "profileImage",
+    "bio" : "bio",
+}
+
+
+// GET /api/v1/user/profile/:userId
+// RESPONSE
+
+{
+    "userId" : "userId",
+    "name" : "name",
+    "profileImage" : "profileImage",
+    "bio" : "bio",
+    "isFollowing" : false
+}
+
+// GET /api/v1/user/followers
+// RESPONSE
+{
+    "followers" : [
+        {
+            "userId" : "userId",
+            "name" : "name",
+            "profileImage" : "profileImage"
+        }
+    ]
+}
+
+
+
+// POST /api/v1/user/follow
+
+{
+    "userId" : "userId"
+}
+
+// RESPONSE
+
+{
+    "status" : "success"
+}
+
+
+
+
+// POST /api/v1/user/unfollow
+
+{
+    "userId" : "userId"
+}
+
+// RESPONSE
+
+{
+    "status" : "success"
+}
+
+
+
+//GET /api/v1/user/followings
+// RESPONSE
+{
+    "followings" : [
+        {
+            "userId" : "userId",
+            "name" : "name",
+            "profileImage" : "profileImage"
+        }
+    ]
+}
+
+
+
+
+// GET /api/v1/user/saved
+// RESPONSE
+{
+    "saved" : [
+        {
+            "postId" : "postId",
+            "title" : "title",
+            "content" : "content",
+            "image" : "image",
+            "createdAt" : "createdAt",
+        }
+    ]
+}
+
+
+// POST /api/v1/post/save
+
+{
+    "postId" : "postId"
+}
+
+// RESPONSE
+
+{
+    "status" : "success"
+}
+
+
+// POST /api/v1/post/unsave
+
+{
+    "postId" : "postId"
+}
+
+// RESPONSE
+
+{
+    "status" : "success"
+}
+
+
+
+
+// POST /api/v1/post/create
+
+{
+    "title" : "title",
+    "content" : "content",
+    "districtId" : "districtId",
+    "productName" : "productName",
+    "productImages" : [
+        "productImage1",
+        "productImage2"
+    ],
+    "productPrice" : "productPrice",
+    "oldPrice" : "oldPrice",
+    "brand" : "brand"
+}
+
+
+// RESPONSE
+
+{
+    "status" : "success"
+}
+
+
+
+// GET /api/v1/post/:postId
+// RESPONSE
+
+{
+    "postId" : "postId",
+    "title" : "title",
+    "content" : "content",
+    "districtId" : "districtId",
+    "productName" : "productName",
+    "productImages" : [
+        "productImage1",
+        "productImage2"
+    ],
+    "productPrice" : "productPrice",
+    "oldPrice" : "oldPrice",
+    "brand" : "brand",
+    "createdAt" : "createdAt",
+    "user" : {
+        "userId" : "userId",
+        "name" : "name",
+        "profileImage" : "profileImage"
+    },
+    "isSaved" : false,
+}
+
+
+
+
+// GET /api/v1/address/cities
+// RESPONSE
+
+{
+    "cities" : [
+        {
+            "cityId" : "cityId",
+            "name" : "name"
+        }
+    ]
+}
+
+// GET /api/v1/address/districts/:cityId
+// RESPONSE
+
+{
+    "districts" : [
+        {
+            "districtId" : "districtId",
+            "name" : "name"
+        }
+    ]
+}
+
+
+
+// POST /api/v1/address/create
+
+{
+    "districtId" : "districtId",
+}
+
+// RESPONSE
+
+{
+    "status" : "success"
+}
+
+// POST /api/v1/address/delete
+
+{
+    "addressId" : "addressId",
+}
+
+// RESPONSE
+
+{
+    "status" : "success"
+}

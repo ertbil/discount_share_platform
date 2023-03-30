@@ -1,0 +1,66 @@
+[
+  {
+    "startDate": "2023-03-26T15:30:00.000Z",
+    "endDate": "2023-03-26T15:30:00.000Z",
+    "owner": {
+      "id": "1",
+      "name": "Mohamed",
+      "email": "",
+      "password": "",
+      "image": "https://lorempixel.com/640/480/?12345",
+      "discountPosts": [],
+      "savedDiscountPosts": [],
+      "followers": [],
+      "following": []
+    },
+    "place": {
+      "id": "1",
+      "city": "Cairo",
+      "district": "Nasr City"
+    },
+    "product": {
+      "description": "description",
+      "id": "1",
+      "imageUrl": "https://lorempixel.com/640/480/?12345",
+      "name": "name",
+      "price": 1,
+      "discountRate": 1,
+      "brand": "brand",
+      "category": "category",
+      "subCategory": "subCategory"
+    },
+    "id": "1"
+  },
+  {
+    "product": {
+      "id": "2",
+      "name": "name",
+      "description": "description",
+      "imageUrl": "https://lorempixel.com/640/480/?12345",
+      "price": 1,
+      "discountRate": 1,
+      "brand": "brand",
+      "category": "category",
+      "subCategory": "subCategory"
+    },
+    "owner": {
+      "id": "2",
+      "name": "Mohamed",
+      "email": "",
+      "password": "",
+      "image": "https://lorempixel.com/640/480/?12345",
+      "discountPosts": [],
+      "savedDiscountPosts": [],
+      "followers": [],
+      "following": []
+    },
+    "place": {
+      "id": "2",
+      "city": "Cairo",
+      "district": "Nasr City"
+    },
+    "id": "2",
+    "startDate": "2023-03-26T15:30:00.000Z",
+    "endDate": "2023-03-26T15:30:00.000Z"
+  }
+]
